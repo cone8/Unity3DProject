@@ -10,5 +10,6 @@ public class BulletMover : MonoBehaviour
     {
         bulletRB = GetComponent<Rigidbody>();
         bulletRB.AddForce(transform.forward * bulletSpeed, ForceMode.VelocityChange);
+        Destroy(gameObject, 10);
     }
 }
